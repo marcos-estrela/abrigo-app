@@ -1,4 +1,4 @@
-# Fullstack 2019
+****# Fullstack 2019
 
 ## Escopo do projeto
 
@@ -50,7 +50,7 @@ API REST os endpoints para chamar as procedures e as views. Não deve ser feito 
   * Função para informar a idade do animal de acordo com a data de nascimento
   * View contento todos os dados dos animais e das raças, além de uma coluna com a idade do animal e uma coluna informando se o animal está vivo ou morto
 
-### Instruções para entrega
+## Instruções para entrega
 
 * Fazer um clone do projeto
 * Gerar dump do banco de dados e colocar na pasta `db`
@@ -60,28 +60,29 @@ API REST os endpoints para chamar as procedures e as views. Não deve ser feito 
   * Hospedar aplicação (front-end e back-end) em algum servidor e enviar a url junto com e-mail;
   * Não é obrigatório usar nenhuma biblioteca visual de frontend, mas se a interface estiver intuitiva, agradável e responsiva você ganhará pontos.
 
-### Requisitos técnicos
+### Estrutura de pastas
+```
+./
+  |_ api //back-end
+  |_ db //banco de dados
+  |_ app //front-end
+```
 
-#### Vue
+## Requisitos técnicos
+
+### Vue
 
 * versão do vue.js: `2.6.*`
 * versão do vue-cli: `3.*`
-* criar o projeto na pasta `front`
+* criar o projeto na pasta `app`
 * usar `yarn` como gerenciador de dependência
 
-#### PHP
+### PHP
 
 * versão do php: `7.2.*`
 
-#### MySQL
+### MySQL
 
 * versão do MySQL: `5.6.*` ou `5.7.*`
 * encoding: `utf-8`
 
-#### Estrutura de pastas
-```
-./
-  |_ api
-  |_ db
-  |_ front
-```

@@ -64,8 +64,8 @@ API REST os endpoints para chamar as procedures e as views. Não deve ser feito 
 ```
 ./
   |_ api //back-end
-  |_ db //banco de dados
   |_ app //front-end
+  |_ db //banco de dados
 ```
 
 ## Requisitos técnicos

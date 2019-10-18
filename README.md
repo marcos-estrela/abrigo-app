@@ -16,7 +16,9 @@ Monza, é dona de um abrigo de animais e precisa de uma sistema para cadastrar o
   * nome
   * situação - `[ATI - Ativo, INA - Inativo]`
 
-Para atender a este desafio você deverá criar uma aplicação em `PHP` apenas com os endpoints da `Api`, uma `SPA` em `Vue.js` que será o frontend da aplicação (não precisa se preocupar com menu ou autenticação) e uma estruta de tabelas, views, procedures e funções no banco de banco de dados `MySQL`.
+Para atender a este desafio você deverá criar uma aplicação em `PHP` apenas com os endpoints da `Api`, uma `SPA` em `Vue.js` que será o frontend da aplicação e uma estruta de tabelas, views, procedures e funções no banco de banco de dados `MySQL`. 
+
+PS: (não precisa se preocupar com menus ou autenticação)
 
 ## Entregáveis
 
@@ -59,7 +61,7 @@ API REST os endpoints para chamar as procedures e as views. Não deve ser feito 
   * Hospedar aplicação (front-end e back-end) em algum servidor e enviar a url junto com e-mail;
   * Não é obrigatório usar nenhuma biblioteca visual de frontend, mas se a interface estiver intuitiva, agradável e responsiva você ganhará pontos.
   * Não é obrigatório autenticação, perfis, menus, etc.
-  * Usar docker pode facilitar algumas coisas, mas fique a vontadde para fazer do seu jeito.
+  * Usar docker pode facilitar algumas coisas, mas fique a vontade para fazer do seu jeito.
 
 ### Estrutura de pastas
 ```

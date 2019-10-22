@@ -133,28 +133,31 @@
                 this.animaisFiltrados = this.animais;
 
                 // Filtro de Espécie
-                if(typeof filterData.especie_codigo !== 'undefined'){
+                if(typeof filterData.especie_codigo !== 'undefined' && filterData.especie_codigo !== null){
                     this.animaisFiltrados = this.animaisFiltrados.filter(function(animal) {
                         return animal.especie_codigo === filterData.especie_codigo;
                     });
                 }
 
-                    // Filtro de Raça
-                if(typeof filterData.raca !== 'undefined' && filterData.raca !== ""){
+                // Filtro de Raça
+                if(typeof filterData.raca !== 'undefined' && filterData.raca !== null && filterData.raca !== ""){
+                    /* eslint-disable no-console */
+                    console.log(filterData.raca);
+                    /* eslint-enable no-console */
                     this.animaisFiltrados = this.animaisFiltrados.filter(function(animal) {
                         return animal.nome_raca === filterData.raca.text;
                     });
                 }
 
                 //Filtro de Idade
-                if(typeof filterData.idade !== 'undefined' && filterData.idade != ""){
+                if(typeof filterData.idade !== 'undefined' && filterData.idade !== null && filterData.idade != ""){
                     this.animaisFiltrados = this.animaisFiltrados.filter(function(animal) {
                         return animal.idade === filterData.idade;
                     });
                 }
 
                 //Filtro de Sexo
-                if(typeof filterData.sexo !== 'undefined'){
+                if(typeof filterData.sexo !== 'undefined' && filterData.sexo !== null){
                     this.animaisFiltrados = this.animaisFiltrados.filter(function(animal) {
                         return animal.sexo === filterData.sexo;
                     });

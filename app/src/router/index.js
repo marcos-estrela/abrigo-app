@@ -10,8 +10,6 @@ export default new VueRouter({
         {
             path: "/",
             redirect: "/listagem_animais",
-            name: "ListagemAnimais",
-            component: ListagemAnimais,
         },
         {
             path: '/listagem_animais',

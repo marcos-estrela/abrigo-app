@@ -322,7 +322,7 @@
                 }).catch(() =>{ this.tratamentoErroServidor()});
             },
             listarRacas () {
-                axios.get('http://localhost:8090/api/racas/listar_racas').then(response => {
+                axios.get('https://apiabrigonovolar.localtunnel.me'+'/api/racas/listar_racas').then(response => {
                     this.racas = response.data;
                 }).catch(error =>{ this.tratamentoErroServidor(error)});
             },

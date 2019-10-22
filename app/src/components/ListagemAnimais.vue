@@ -255,7 +255,7 @@
                 }
                 else {
                     if (this.editar) {
-                        axios.put('https://apiabrigonovolar.localtunnel.me'+'api/animais/atualizar_animal/' + formData.id, formData).then(response => {
+                        axios.put('https://apiabrigonovolar.localtunnel.me'+'/api/animais/atualizar_animal/' + formData.id, formData).then(response => {
                             this.listarAnimais();
                             // Lista novamente as raças caso tenha sido inserida uma nova
                             if(typeof formData.raca === 'string'){

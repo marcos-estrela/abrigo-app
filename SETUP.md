@@ -2,7 +2,7 @@
 
 ## Imagem APP
 ```
--- docker push marcosestrela/abrigo-app:tagname
+docker push marcosestrela/abrigo-app:latest
 ```
 
 ## Imagem API (Ainda não foi upada)

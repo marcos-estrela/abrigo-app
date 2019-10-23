@@ -164,7 +164,7 @@
                 }
             },
             listarAnimais () {
-                axios.get('https://apiabrigonovolar.localtunnel.me'+'/api/animais/listar_animais').then(response => {
+                axios.get('https://apiabrigonovolar.serveo.net'+'/api/animais/listar_animais').then(response => {
                     this.animais = response.data.filter(function(animal) {
                         return animal.estado === "Vivo";
                     });
@@ -172,7 +172,7 @@
                 }).catch(() =>{ this.tratamentoServidorOffline()});
             },
             listarRacas () {
-                axios.get('https://apiabrigonovolar.localtunnel.me'+'/api/racas/listar_racas').then(response => {
+                axios.get('https://apiabrigonovolar.serveo.net'+'/api/racas/listar_racas').then(response => {
                     this.racas = response.data
                 }).catch(() =>{ this.tratamentoServidorOffline()});
             },

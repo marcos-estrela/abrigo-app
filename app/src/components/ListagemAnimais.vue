@@ -255,7 +255,7 @@
                 }
                 else {
                     if (this.editar) {
-                        axios.put('https://apiabrigonovolar.localtunnel.me'+'/api/animais/atualizar_animal/' + formData.id, formData).then(response => {
+                        axios.put('https://apiabrigonovolar.serveo.net'+'/api/animais/atualizar_animal/' + formData.id, formData).then(response => {
                             this.listarAnimais();
                             // Lista novamente as raças caso tenha sido inserida uma nova
                             if(typeof formData.raca === 'string'){
@@ -265,7 +265,7 @@
                             this.tratamentoSucesso(response.data.mensagem);
                         }).catch(response =>{ this.tratamentoErroServidor(response)});
                     } else {
-                        axios.post('https://apiabrigonovolar.localtunnel.me'+'/api/animais/inserir_animal', formData).then(response => {
+                        axios.post('https://apiabrigonovolar.serveo.net'+'/api/animais/inserir_animal', formData).then(response => {
                             this.listarAnimais();
                             // Lista novamente as raças caso tenha sido inserida uma nova
                             if(typeof formData.raca === 'string'){
@@ -317,12 +317,12 @@
 
             },
             listarAnimais () {
-                axios.get('https://apiabrigonovolar.localtunnel.me'+'/api/animais/listar_animais').then(response => {
+                axios.get('https://apiabrigonovolar.serveo.net'+'/api/animais/listar_animais').then(response => {
                     this.animais = response.data;
                 }).catch(() =>{ this.tratamentoErroServidor()});
             },
             listarRacas () {
-                axios.get('https://apiabrigonovolar.localtunnel.me'+'/api/racas/listar_racas').then(response => {
+                axios.get('https://apiabrigonovolar.serveo.net'+'/api/racas/listar_racas').then(response => {
                     this.racas = response.data;
                 }).catch(error =>{ this.tratamentoErroServidor(error)});
             },

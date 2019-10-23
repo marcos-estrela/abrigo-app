@@ -9,4 +9,4 @@ docker pull marcosestrela/abrigo-app:tagname
 
 ## URL para acessar o projeto
 
-URL para acessar o projeto: (https://abrigonovolar.localtunnel.me)
+URL para acessar o projeto: (https://abrigonovolar.serveo.net/)
